@@ -4,11 +4,531 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+    <!--left col-->
+      <a-box 
+      position="0 0 -8" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: pink; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 1500">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="pink" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="0 1 -8" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: pink; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 3000;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="pink" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+    
+    <a-box 
+      position="0 0 -7" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: cyan; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 750">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="cyan" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="0 1 -7" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: #1e81b0; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 2250;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="#1e81b0" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+
+    <a-box 
+      position="0 0 -6" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: pink; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 2250">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="pink" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="0 1 -6" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: #1e81b0; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 1500;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="#1e81b0" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+
+    <!--MIDDLE COL-->
+    <a-box 
+      position="1 0 -8" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: #1e81b0; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 3000">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="#1e81b0" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="1 1 -8" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: orange; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 750;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="orange" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+    
+    <a-box 
+      position="1 0 -7" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: cyan; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 3750">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="cyan" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="1 1 -7" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: black; opacity: 0.5; transparent: true; side: double">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="5" 
+               color="#cyan" 
+               distance="3">
+      </a-light>
+    </a-box>
+
+    
+
+    <a-box 
+      position="1 0 -6" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: orange; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 4500">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="orange" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="1 1 -6" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: orange; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 4500;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="orange" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+
+    <!--RIGHT COL-->
+    <a-box 
+      position="2 0 -8" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: #1e81b0; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 1500">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="#1e81b0" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="2 1 -8" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: orange; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 3750;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="orange" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+    
+    <a-box 
+      position="2 0 -7" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: cyan; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 750">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="cyan" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="2 1 -7" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: cyan; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 5250;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="cyan" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+
+    <a-box 
+      position="2 0 -6" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: orange; opacity: 0.5; transparent: true; side: double"
+      animation="property: opacity;
+                           from: 1;
+                           to: 0;
+                           loop: true;
+                           dir: alternate;
+                           dur: 2250">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="orange" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    <a-box 
+      position="2 1 -6" 
+      width="0.95" 
+      height="0.95" 
+      depth="0.95" 
+      material="color: pink; opacity: 0.5; transparent: true; side: double"
+      animation="property: scale;
+                          to: 1 0.2 1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 6000;
+                          easing: easeInOutElastic">
+      <a-light type="point" 
+               position="0 0 0" 
+               intensity="2" 
+               color="pink" 
+               distance="1.5">
+      </a-light>
+    </a-box>
+
+    
+    <!-- top row rotation -->
+    <a-entity position="1 2 -7"
+              animation="property: rotation;
+                to: 0 -360 0;
+                loop: true;
+                dur: 5000;
+                easing: linear">
+                
+                <a-box 
+                position="-1 0 -1" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: cyan; opacity: 0.5; transparent: true; side: double"> 
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="cyan" 
+                         distance="1.5">
+                </a-light>
+                
+              </a-box>
+
+                <a-box 
+                position="-1 0 0" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: pink; opacity: 0.5; transparent: true; side: double">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="pink" 
+                         distance="1.5">
+                </a-light>
+              </a-box>        
+                
+                <a-box 
+                position="-1 0 1" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: orange; opacity: 0.5; transparent: true; side: double">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="orange" 
+                         distance="1.5">
+                </a-light>
+              </a-box>        
+                
+                <a-box 
+                position="0 0 -1" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: #1e81b0; opacity: 0.5; transparent: true; side: double">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="#1e81b0" 
+                         distance="1.5">
+                </a-light>
+                </a-box>
+
+                <a-box 
+                position="0 0 0" 
+                width="0.75" 
+                height="0.95" 
+                depth="0.75" 
+                material="color: #93f6c1; opacity: 0.5; transparent: true; side: double"
+                animation="property: rotation;
+                                    to: 0 360 0;
+                                    loop: true;
+                                    dur: 2500;
+                                    easing: linear">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="#93f6c1" 
+                         distance="1.5">
+                </a-light>
+              </a-box>
+
+                <a-box 
+                position="0 0 1" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: pink; opacity: 0.5; transparent: true; side: double">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="pink" 
+                         distance="1.5">
+                </a-light>
+              </a-box>
+
+                <a-box 
+                position="1 0 -1" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: pink; opacity: 0.5; transparent: true; side: double">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="pink" 
+                         distance="1.5">
+                </a-light>
+              </a-box>
+
+                <a-box 
+                position="1 0 0" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: orange; opacity: 0.5; transparent: true; side: double">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="orange" 
+                         distance="1.5">
+                </a-light>
+              </a-box>
+                
+                <a-box 
+                position="1 0 1" 
+                width="0.95" 
+                height="0.95" 
+                depth="0.95" 
+                material="color: #1e81b0; opacity: 0.5; transparent: true; side: double">
+                <a-light type="point" 
+                         position="0 0 0" 
+                         intensity="2" 
+                         color="#1e81b0" 
+                         distance="1.5">
+                </a-light>
+              </a-box>                         
+    </a-entity>
+
+    <a-camera position="1 4 5"></a-camera>
+    <a-light type="directional" position="0 3 3" intensity="0.5"></a-light>
+    <a-sky color="#000000"></a-sky>
+    <a-plane 
+      position="1 -1 -7" 
+      rotation="-90 0 0" 
+      width="10" 
+      height="10" 
+      color="#111111">
+    </a-plane>
     </a-scene>
   </body>
 </html>
